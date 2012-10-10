@@ -7,8 +7,8 @@ _Vanilla software is computer software that is not customized from its delivered
 iVanilla is a lightweight web project skeleton for mobile iDevices (iPhone, iPad, ...).
 It provides you with an html, css and js file to help you get started quickly.
 
-iVanilla.htm
-------------
+iVanilla.html
+-------------
 
 Valid HTML5 page structure, optimized for iDevices. It has correct viewport configuration so content is displayed nicely without the need to zoom.
 Therefore, it also disables the zoom feature to improve the user experience, reproducing the feeling of a native application.
@@ -25,8 +25,8 @@ iVanilla.css
 
 Provides many media queries (for iPhone, iPad, retina screens, orientations, ...) so you just have to pick the ones you need for your project.
 
-demo.htm
---------
+demo.html
+---------
 
 Demonstration page on how to use the JS and CSS sweetnesses of iVanilla. For reading convenience, the HTML, CSS and JS have been placed in the same page.
 
