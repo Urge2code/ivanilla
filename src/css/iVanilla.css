@@ -1,0 +1,86 @@
+/*
+ * iVanilla
+ * version 0.7
+ * author: Thibaut Van Spaandonck (Urge2code)
+ * http://www.urge2code.com
+ * http://github.com/Urge2code/iVanilla
+ * Licensed under the MIT license.
+ */
+
+/* NOTE : the rules below are there to illustrate many different cases.
+   Keep only the ones you need. And because they usually come in pairs,
+   only implement one of the two (eg: if you implement landscape orientation,
+   don't use the portrait rule but configure it in the default style instead). 
+*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina displays */
+}
+
+@media screen and (orientation: portrait) {
+    /* Portrait orientation */  
+}
+
+@media screen and (orientation: landscape) {
+    /* Landscape orientation */ 
+}
+
+@media screen and (device-width: 320px) {
+    /* iPhone and iPod (all versions) */
+}
+
+@media screen and (device-height: 480px) {
+    /* non 4-inch display (prior to iPhone 5 or iPod Touch 5th generation) */ 
+}
+
+@media screen and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* 4-inch display (iPhone 5 or iPod Touch 5th generation) */
+}
+
+@media screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina iPhone and iPod */
+}
+
+@media screen and (device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina iPad */
+}
+
+@media screen and (device-width: 768px) {
+    /* iPad (all versions) */
+}
+
+@media screen and (device-width: 320px) and (-webkit-device-pixel-ratio: 1) {
+    /* Non-retina iPhone and iPod */
+}
+
+@media screen and (device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1) {
+    /* Non-retina iPad in portrait orientation */
+}
+
+@media screen and (device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1) {
+    /* Non-retina iPad in landscape orientation */
+}
+
+@media screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina iPad in portrait orientation */
+}
+
+@media screen and (device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina iPad in landscape orientation */
+}
+
+@media screen and (device-width: 320px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1) {
+    /* Non-retina iPhone and iPod in portrait orientation */
+}
+
+@media screen and (device-width: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1) {
+    /* Non-retina iPhone and iPod in landscape orientation */
+}
+
+@media screen and (device-width: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina iPhone and iPod in portrait orientation */
+}
+
+@media screen and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Retina iPhone and iPod in landscape orientation */
+}

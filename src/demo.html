@@ -1,0 +1,123 @@
+<!--
+ * iVanilla
+ * version 0.7
+ * author: Thibaut Van Spaandonck (Urge2code)
+ * http://www.urge2code.com
+ * http://github.com/Urge2code/iVanilla
+ * Licensed under the MIT license.
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Page title</title>
+        <style type="text/css">
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            ul:nth-of-type(2) li {
+                float: left;
+            }
+            
+            @media screen and (device-width: 320px) {           
+                #iPadText { display: none; }
+            }
+            
+            @media screen and (device-width: 768px) {
+                #iPhoneOrIPodText { display: none; }
+                #fourInchText { display: none; }
+                #nonFourInchText { display: none; }
+            }
+            
+            @media screen and (-webkit-device-pixel-ratio: 2) {
+                #nonRetinaText { display: none; }
+            }
+            
+            @media screen and (-webkit-device-pixel-ratio: 1) {
+                #retinaText { display: none; }
+            }
+            
+            @media screen and (device-height: 480px) {
+                #fourInchText { display: none; }
+            }
+            
+            @media screen and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+                #nonFourInchText { display: none; }
+            }
+            
+            @media screen and (orientation: portrait) {
+                #landscapeText { display: none; }
+            }
+            
+            @media screen and (orientation: landscape) {
+                #portraitText { display: none; }
+            }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/iVanilla.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $("#iPhone").text(iVanilla.isIPhone);
+                $("#iPod").text(iVanilla.isIPod);
+                $("#iPhoneiPod").text(iVanilla.isIPhoneOrIPod);
+                $("#iPad").text(iVanilla.isIPad);
+                $("#fourInch").text(iVanilla.is4InchScreen);
+                $("#pixelRatio").text(iVanilla.pixelRatio);
+                $("#retina").text(iVanilla.isRetinaDisplay);
+                $("#viewportWidth").text(iVanilla.viewport.width);
+                $("#viewportHeight").text(iVanilla.viewport.height);
+                $("#screenWidth").text(iVanilla.screen.width);
+                $("#screenHeight").text(iVanilla.screen.height);
+                $("#portrait").text(iVanilla.orientation.isPortrait);
+                $("#landscape").text(iVanilla.orientation.isLandscape);
+                
+                // iVanilla provides the orientationChanged event with a parameter
+                // containing 2 properties : isPortrait and isLandscape.
+                $(document).on("orientationChanged", function(e) {
+                    $("#portrait").text(e.isPortrait);
+                    $("#landscape").text(e.isLandscape);
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>iVanilla demo</h1>
+        <h2>Javascript</h2>
+        <ul>
+            <li><strong>iPhone: </strong><span id="iPhone">&nbsp;</span></li>
+            <li><strong>iPod: </strong><span id="iPod">&nbsp;</span></li>
+            <li><strong>iPhone or iPod: </strong><span id="iPhoneiPod">&nbsp;</span></li>
+            <li><strong>iPad: </strong><span id="iPad">&nbsp;</span></li>
+            <li><strong>4-inch screen: </strong><span id="fourInch">&nbsp;</span></li>
+            <li><strong>Pixel ratio: </strong><span id="pixelRatio">&nbsp;</span></li>
+            <li><strong>Retina display: </strong><span id="retina">&nbsp;</span></li>
+            <li><strong>Viewport width: </strong><span id="viewportWidth">&nbsp;</span></li>
+            <li><strong>Viewport height: </strong><span id="viewportHeight">&nbsp;</span></li>
+            <li><strong>Screen width: </strong><span id="screenWidth">&nbsp;</span></li>
+            <li><strong>Screen height: </strong><span id="screenHeight">&nbsp;</span></li>
+            <li><strong>Portrait: </strong><span id="portrait">&nbsp;</span></li>
+            <li><strong>Landscape: </strong><span id="landscape">&nbsp;</span></li>
+        </ul>
+        
+        <h2>CSS</h2>
+        <ul>
+            <li>This device is an&nbsp;</li>
+            <li id="iPhoneOrIPodText">iPhone or iPod touch,&nbsp;</li>
+            <li id="iPadText">iPad,&nbsp;</li>
+            <li id="retinaText">with a retina display,&nbsp;</li>
+            <li id="nonRetinaText">without a retina display,&nbsp;</li>
+            <li id="fourInchText">with a 4-inch screen (such as the iPhone 5 or iPod touch 5th generation),&nbsp;</li>
+            <li id="nonFourInchText">without a 4-inch screen (prior to the iPhone 5 or iPod touch 5th generation),&nbsp;</li>
+            <li id="portraitText">currently in portrait orientation.</li>
+            <li id="landscapeText">currently in landscape orientation.</li>
+        </ul>
+    </body>
+</html>
