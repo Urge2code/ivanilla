@@ -8,7 +8,7 @@
  */
 (function(window, undefined) {
     var pixelRatio = window.devicePixelRatio || 1,
-        userAgent = navigator.userAgent,
+        userAgent = window.navigator.userAgent,
         isIPhone = userAgent.indexOf("iPhone") !== -1,
         isIPod = userAgent.indexOf("iPod") !== -1,
         isIPad = userAgent.indexOf("iPad") !== -1;
