@@ -1,4 +1,4 @@
-<p align="center"><img src="http://thibautvs.com/blog/img/urge2code/ivanilla.png" /></p>
+<p align="center"><img src="http://thibautvs.com/blog/img/urge2code/ivanilla1.png" /></p>
 
 _Vanilla software is computer software that is not customized from its delivered form – i.e. it is used without any customizations applied to it._
 <span>(Wikipedia)</span>
