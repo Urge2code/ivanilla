@@ -53,4 +53,3 @@ you can add some interesting libraries, such as:
 * jQueryMobile
 * jQTouch
 * Teehan+Lax iPhone/iPad GUI PSD
-* ...
