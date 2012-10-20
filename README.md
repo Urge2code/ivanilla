@@ -52,4 +52,5 @@ you can add some interesting libraries, such as:
 * HammerJS
 * jQueryMobile
 * jQTouch
+* Teehan+Lax iPhone/iPad GUI PSD
 * ...
