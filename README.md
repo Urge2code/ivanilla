@@ -9,6 +9,8 @@ It provides you with an html, css and js file to help you get started quickly.
 Files
 =====
 
+You'll find here a description of the files contained in the iVanilla project.
+
 iVanilla.html
 -------------
 
