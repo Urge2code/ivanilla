@@ -47,7 +47,7 @@ iVanilla enables you to accomplish some tasks (such as orientation detection) us
 a CSS-based approach and for the cases where CSS cannot help, use the JS approach instead.
 
 As this little project was designed to remain as lightweight as possible, features were intentionally kept to the minimum. However, it remains a very strong foundation on top of which
-you can add some interesting libraries, such as:
+you can add some interesting tools, such as:
 
 * HammerJS
 * jQueryMobile
