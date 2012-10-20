@@ -1,6 +1,8 @@
 iVanilla
 ========
 
+<p style="margin:0 auto"><img src="http://thibautvs.com/img/vanilla.png" /></p>
+
 _Vanilla software is computer software that is not customized from its delivered form – i.e. it is used without any customizations applied to it._
 <span>(Wikipedia)</span>
 
