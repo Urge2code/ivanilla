@@ -1,7 +1,6 @@
 <p align="center"><img src="http://thibautvs.com/blog/img/urge2code/ivanilla1.png" /></p>
 
-_Vanilla software is computer software that is not customized from its delivered form – i.e. it is used without any customizations applied to it._
-<span>(Wikipedia)</span>
+_Vanilla software is computer software that is not customized from its delivered form._ <span>(Wikipedia)</span>
 
 iVanilla is a lightweight web project skeleton for mobile iDevices (iPhone, iPad, ...).
 It provides you with an html, css and js file to help you get started quickly.
