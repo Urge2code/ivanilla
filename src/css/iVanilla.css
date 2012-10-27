@@ -1,6 +1,6 @@
 /*
  * iVanilla
- * version 0.7
+ * version 0.8
  * author: Thibaut Van Spaandonck (Urge2code)
  * http://www.urge2code.com
  * http://github.com/Urge2code/iVanilla
