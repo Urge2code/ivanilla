@@ -26,8 +26,8 @@
             isLandscape: undefined
         },
         viewport: {
-            width: window.innerWidth,
-            height: window.innerHeight
+            width: window.innerWidth * pixelRatio,
+            height: window.innerHeight * pixelRatio
         },
         screen: {
             width: window.screen.availWidth * pixelRatio,
