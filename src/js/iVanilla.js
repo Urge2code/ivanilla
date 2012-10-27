@@ -18,7 +18,7 @@
         isIPod: isIPod,
         isIPhoneOrIPod: isIPhone || isIPod,
         isIPad: isIPad,
-        is4InchScreen: window.screen.availHeight === 568,
+        is4InchScreen: window.screen.availHeight === 548,
         pixelRatio: pixelRatio,
         isRetinaDisplay: pixelRatio >= 2,
         orientation: {
